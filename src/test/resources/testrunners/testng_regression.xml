@@ -1,0 +1,53 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="API Regression Suite" parallel="tests" thread-count="1" verbose="4">
+
+
+	<listeners>
+
+		<listener class-name="com.qa.gorest.listeners.ExtentReportListener" />
+
+	</listeners>
+
+	<!-- <test name="Amadeus flight API Test">
+		<parameter name="baseURI" value="https://test.api.amadeus.com" />
+		<parameter name="grantType" value="client_credentials" />
+		<parameter name="clientId" value="jnulx1e075sdqV8bP17GaMSvcF6SuQS4" />
+		<parameter name="clientSecret" value="Y7qJanyTAK2tE9AA" />
+
+		<classes>
+			<class name="com.qa.gorest.tests.AmadeusAPITest" />
+		</classes>
+	</test>-->
+
+
+	<test name="GO Rest Test">
+		<parameter name="baseURI" value="https://gorest.co.in" />
+		<classes>
+			<class name="com.qa.gorest.tests.GetUserTest" />
+		</classes>
+	</test>
+
+
+ <test name="GO Rest Test create user Test">
+		<parameter name="baseURI" value="https://gorest.co.in" />
+		<classes>
+			<class name="com.qa.gorest.tests.CreateUserTest" />
+		</classes>
+	</test>
+
+		<!--<test name="Circuit API Test">
+		<parameter name="baseURI" value="http://ergast.com" />
+		<classes>
+			<class name="com.qa.gorest.tests.CircuitTest" />
+		</classes>
+	</test>-->
+
+	<!--<test name="ReqResAPITest">
+		<parameter name="baseURI" value="https://reqres.in" />
+		<classes>
+			<class name="com.qa.gorest.tests.ReqResAPITest" />
+		</classes>
+	</test>-->
+
+
+</suite>
