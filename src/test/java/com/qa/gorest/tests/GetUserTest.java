@@ -42,7 +42,7 @@ public class GetUserTest extends BaseTest {
 	public void getUserWithQueryParamsTest() {
 
 		Map<String, String> queryParams = new HashMap<>();
-		queryParams.put("name", "Rakesh");
+		queryParams.put("name ", "Rakesh");
 		queryParams.put("status", "active");
 
 		// Perform a GET request with query parameters and validate the response
