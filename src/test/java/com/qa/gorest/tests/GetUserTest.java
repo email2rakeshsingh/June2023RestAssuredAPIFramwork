@@ -34,8 +34,8 @@ public class GetUserTest extends BaseTest {
 
 	@Test(enabled = true)
 	public void getUserTest() {
-		restClient.get(GOREST_ENDPOINT + "/" + 5114519, true, true).then().log().all().assertThat()
-				.statusCode(APIHttpStatus.OK_200.getCode()).and().body("id", equalTo(5114519));
+		restClient.get(GOREST_ENDPOINT + "/" + 4990573, true, true).then().log().all().assertThat()
+				.statusCode(APIHttpStatus.OK_200.getCode()).and().body("id", equalTo(4990573));
 	}
 
 	@Test()
