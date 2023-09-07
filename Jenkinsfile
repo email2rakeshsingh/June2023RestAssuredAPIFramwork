@@ -13,7 +13,7 @@ pipeline
             steps
             {
                  git 'https://github.com/jglick/simple-maven-project-with-tests.git'
-                 bat "mvn -Dmaven.test.failure.ignore=true clean package"
+                 bat "mvn clean install"
             }
             post 
             {
@@ -60,7 +60,7 @@ pipeline
         }
         
         
-        stage('Publish Extent Report for Build1'){
+        stage('Publish Extent Report for pipLine'){
             steps{
                      publishHTML([allowMissing: false,
                                   alwaysLinkToLastBuild: false, 
